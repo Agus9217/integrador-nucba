@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Orbitron:wght@900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 * {
@@ -32,7 +32,7 @@ body {
 }
 
 .logo-titulo span {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
@@ -84,19 +84,18 @@ body {
     height: 100vh;
 }
 
-
 .hero-text {
     width: 70%;
     z-index: 1;
 }
 
 .hero-text h1 {
-    font-size: 5rem;
+    font-size: 6vw;
     font-weight: bolder;
 }
 
 .hero-text p {
-    font-size: 2rem;
+    font-size: 2vw;
     font-style: italic;
 }
 
@@ -112,7 +111,7 @@ body {
 }
 
 .redes-sociales span {
-    font-size: 1.2rem;
+    font-size: 1.2vw;
 }
 
 .buttons {
@@ -141,4 +140,40 @@ body {
     padding: 10px 20px;
     background: #B5179E;
     border-radius: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso-group {
+    display: flex;
+    
+    flex-direction: column;
+    gap: 30px;
+}
+
+.curso-group span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3vw;
+}
+
+.curso-group p {
+    font-size: 1.5vw;
+}
+
+.curso {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.curso h2 {
+    font-size: 3vw;
 }
