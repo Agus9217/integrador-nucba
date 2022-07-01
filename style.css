@@ -24,6 +24,7 @@ body {
 
 .header {
     position: fixed;
+    background: inherit;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -151,29 +152,145 @@ body {
 
 .curso-group {
     display: flex;
-    
     flex-direction: column;
     gap: 30px;
 }
 
 .curso-group span {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3vw;
+    font-size: 8.5vw;
+    background: #ccc;
+    background: linear-gradient(90deg, #B5179E, #7209B7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .curso-group p {
+    position: relative;
+    top: -65px;
+    left: 50px;
     font-size: 1.5vw;
 }
 
 .curso {
     width: 60%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px 0;
     gap: 30px;
 }
 
 .curso h2 {
     font-size: 3vw;
+}
+
+.dirigido h2 {
+    padding: 60px 0;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.dirigido-group {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+
+}
+
+.dirigido-text {
+    width: 50%;
+}
+
+.dirigido-text p {
+    font-size: 1.5vw;
+}
+
+.dirigido-img {
+    width: 50%;
+}
+
+.dirigido-img img {
+    width: 100%;
+}
+
+.info-programa {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 30vw;
+    gap: 40px;
+}
+
+.info-titulo {
+    padding: 0 60px;
+    font-size: 3vw;
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.info-text p {
+    font-size: 1.5vw;
+}
+
+
+.info-text i {
+    font-size: 4vw;
+    background: linear-gradient(90deg, #B5179E, #7209B7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.info-formulario {
+    width: 70%;
+}
+
+.info-formulario h2 {
+    font-size: 3vw;
+    text-align: center;
+    padding: 40px;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.formulario p {
+    padding: 10px;
+}
+
+.formulario input, textarea {
+    background: rgba(181, 23, 158, 0.6);
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.formulario input:focus, textarea:focus {
+    outline: 2px solid #3A0CA3;
+}
+
+.formulario input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+.formulario button {
+    cursor: pointer;
+    text-align: center;
+    background: rgba(181, 23, 158, 0.6);
+    padding: 20px 40px;
+    font-size: 1.5vw;
+    border: none;
+    color: white;
+    border-radius: 10px;
 }
