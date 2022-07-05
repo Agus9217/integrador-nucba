@@ -25,7 +25,10 @@ body {
 
 .header {
     position: fixed;
-    background: inherit;
+    background: #3A0CA3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B5179E, #560BAD , #3A0CA3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B5179E, #560BAD, #3A0CA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -233,7 +236,7 @@ body {
 .info-text {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .info-text p {
@@ -301,6 +304,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 30vw;
+    font-size: 1.5vw;
 }
 
 .footer-cabecera {
@@ -308,6 +312,18 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px;
+}
+
+.navbar-footer {
+    align-items: center;
+}
+
+.navbar-footer ul {
+    gap: 40px;
+}
+
+.navbar-footer a {
+    font-size: 1.5vw;
 }
 
 .footer-bottom {
