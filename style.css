@@ -25,9 +25,7 @@ body {
 
 .header {
     position: fixed;
-    background: #3A0CA3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #B5179E, #560BAD , #3A0CA3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #B5179E, #560BAD, #3A0CA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: inherit;
 
     width: 100%;
     justify-content: space-between;
