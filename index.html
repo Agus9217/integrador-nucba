@@ -1,146 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Integrador</title>
+  <link rel="stylesheet" href="/style.css">
+  <title>Lauta-Guitar</title>
 </head>
 
 <body>
-  <header class="header flex">
-    <div class="logo-titulo">
-      <span>Lauta Guitar</span>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="titulo">
+      <span class="lauta-titulo-color">Lauta </span><span>Guitar</span>
     </div>
-    <input type="checkbox" id="btn-menu" class="btn-menu">
+    <input type="checkbox" id="btn-menu" class="btn-menu" />
     <label for="btn-menu"><i class="bi bi-list"></i></label>
     <nav class="navbar">
-      <ul class="flex">
-        <li><a href="" class="nav-link">Home</a></li>
-        <li><a href="" class="nav-link">Cursos</a></li>
-        <li><a href="" class="nav-link">Contacto</a></li>
-        <li><a href="" class="login">Login</a></li>
-        <li><a href="" class="registrate">Registrate</a></li>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#curso" class="nav-link">Curso</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#login" class="nav-link">Login</a></li>
+        <li><a href="#registrate" class="nav-link">Registrate</a></li>
       </ul>
     </nav>
   </header>
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Clases de guitarra online</h1>
-      <p>Recursos para que puedas aprender de la mejor manera</p>
-      <div class="redes-sociales">
-        <i class="bi bi-book"></i><span>Clases academicas personalizadas</span>
-        <i class="bi bi-camera-video"></i><span>Clases grabadas</span>
-        <i class="bi bi-check2-circle"></i><span>Aprendizaje asegurado</span>
-      </div>
-      <div class="buttons">
-        <a class="hero-ver" href="">Ver programa</a>
+  <div class="imagen-background">
+  </div>
+  <div class="bienvenidos">
+    <div class="bienvenidos-grupo grupo-color-1">
+      <p>Bienvenidos a mi pagína web</p>
+      <h1>Lauta-Guitar</h1>
+    </div>
+    <div class="bienvenidos-grupo grupo-color-2">
+      <p>Soy guitarrista profesional e instructor de varios estilos de música</p>
+      <div class="bienvenidos-grupo-btn">
+        <a href="" class="btn-clases">Clases</a>
+        <a href="" class="btn-contacto">Contactame</a>
       </div>
     </div>
-  </section>
-  <main class="main">
-    <section class="curso">
-      <div class="curso-group">
-        <h2>¿Que vas aprender?</h2>
-        <div>
-          <span>01</span>
-          <p>Posición correcta de las manos. El aspecto mas importante para empezar</p>
-        </div>
-        <div>
-          <span>02</span>
-          <p>Dominar varias técnicas de interpretación</p>
-        </div>
-        <div>
-          <span>03</span>
-          <p>Trabajaremos en fraseo e improvisación</p>
-        </div>
-      </div>
-      <div class="curso-group">
-        <div>
-          <span>04</span>
-          <p>Tips y secretos de guitarristas profesionales</p>
-        </div>
-        <div>
-          <span>05</span>
-          <p>Preparación para presentaciones en vivo y trabajo de estudio</p>
-        </div>
-        <div>
-          <span>06</span>
-          <p>Ensamble e interación con otros instrumentos</p>
-        </div>
-      </div>
-    </section>
-    <section class="dirigido">
-      <h2>¿Para quien es este curso?</h2>
-      <div class="dirigido-group">
-        <div class="dirigido-text">
-          <p>Este curso es para todos los niveles tanto avanzados como principiantes. No hace falta tener
-            conocimiento previo, se van a abordar temas de improvisación, técnicas y mucho más para que te
-            puedas desenvolver en la guitarra con conocimientos y fundamentos sólidos</p>
-        </div>
-        <div class="dirigido-img">
-          <img class="img-filtro" src="/img/practicando-guitarra.jpg" alt="">
-        </div>
-      </div>
-    </section>
-    <section class="info-programa">
-      <div>
-        <h2 class="info-titulo">¿Que incluye el curso?</h2>
-        <div>
-          <a href=""></a><a href=""></a>
-        </div>
-      </div>
-      <div class="info-text">
-        <i class="bi bi-check-circle-fill"></i>
-        <p>Videotutoriales enriquecidos</p>
-        <i class="bi bi-check-circle-fill"></i>
-        <p>Acceso a la plataforma
-        <p>
-          <i class="bi bi-check-circle-fill"></i>
-        <p>Concursos con premios</p>
-        <i class="bi bi-check-circle-fill"></i>
-        <p>Comunidad con personas afines</p>
-      </div>
-    </section>
-    <section class="info-formulario">
-      <h2>Contactanos</h2>
-      <form class="formulario">
-        <p>
-          <input type="text" placeholder="Nombre">
-        </p>
-        <p>
-          <input type="text" placeholder="Apellido">
-        </p>
-        <p>
-          <textarea cols="30" rows="10" placeholder="Ingresa tu consulta"></textarea>
-        </p>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-cabecera">
-      <h2>Lauta Guitar</h2>
-      <nav class="navbar-footer">
-        <ul class="flex">
-          <li><a href="" class="nav-link">Home</a></li>
-          <li><a href="" class="nav-link">Cursos</a></li>
-          <li><a href="" class="nav-link">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-bottom">
-      <span>Diseño por &copy Just1ñ</span>
-      <div class="footer-redes">
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-youtube"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-      </div>
-    </div>
-  </footer>
-</body>
+  </div>
 
+
+
+</body>
 
 </html>
