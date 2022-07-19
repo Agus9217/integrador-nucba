@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Lauta-Guitar</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="titulo">
+            <span class="lauta-titulo-color">Lauta </span><span>Guitar</span>
+        </div>
+        <input type="checkbox" id="btn-menu" class="btn-menu" />
+        <label for="btn-menu"><i class="bi bi-list"></i></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="#curso" class="nav-link">Curso</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#login" class="nav-link">Login</a></li>
+                <li><a href="registro.html" class="nav-link">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="registerContainer">
+
+        <section class="registerSection">
+            <h2>Formulario de Registro!</h2>
+            <form class="form">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre completo / Apodo / Alias"
+                    autocomplete="off">
+                <label for="band">Cual es tu banda preferida?</label>
+                <input type="text" name="band" id="band">
+
+
+                <label for="inst">Sabes tocar algun instrumento?</label>
+                <input type="text" name="inst" id="inst" placeholder="" autocomplete="off">
+
+                <label for="nivel">Que nivel?</label>
+                <select name="genero">
+                    <option>No se tocar ningun Instrumento</option>
+                    <option>Principiante</option>
+                    <option>Intermedio</option>
+                    <option>Experto</option>
+                </select>
+                <label for="mail">Ingresa un E-mail </label>
+                <input type="email" name="mail" id="mail" placeholder="ejemplo@ejemplo.com" autocomplete="off">
+
+                <label for="pasw">Ingresa una contraseña de no menos de 8 caracteres:</label>
+                <input type="password" name="pasw" id="pasw" placeholder="Crear una contraseña">
+                <label for="conf">Confirma la contraseña:</label>
+                <input type="password" name="conf" id="conf" placeholder="Confirmar contraseña">
+            </form>
+            <div class="containerckek">
+                <input type="checkbox" name="terminos" id="terminos">
+                <label for="terminos">Estoy de acuerdo con los terminos y condiciones de la Pagina Web. </label>
+            </div>
+            <button type="submit">Registrarme!</button>
+            <a href="#">¿Ya estas resgistrado? <span>Iniciar sesión!</span> </a>
+        </section>
+    </div>
+</body>
+
+</html>

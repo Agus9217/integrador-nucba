@@ -213,3 +213,95 @@ body {
   background: red;
   color: #fff;
 }
+
+/* ---PAGINA DE REGISTRO--- */
+.registerContainer {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/pexels-sebastian-ervi-1763075.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.registerSection{
+  text-align: center;
+  width: 40%;
+  height: 900px;
+  background-color: #ffbb00;
+  border-radius: 10px;
+   color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.registerSection h2{
+  font-size: 40px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+}
+.form input{
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.form input:focus{
+  border: 1px solid #000;
+}
+.form select{
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.registerSection button{
+  background : rgb(0, 0, 0); 
+  color : rgb(255, 255, 255); 
+  font-size : 24px; 
+  width : 200px; 
+  height : 80px; 
+  outline: none;
+  border: none;
+position: relative;
+}
+
+.registerSection button:hover{
+  background-color: red;
+  transition: 0.3s;
+}
+.registerSection button:active{
+  top: 5px;
+}
+.registerSection a{
+  color: #000;
+}
+.registerSection a:hover{
+  transition: 0.3s;
+  color: red;
+}
+@media screen and (max-width:800px) {
+  .registerSection{
+    width: 70%;
+    height: 950px;
+   }
+}
+@media screen and (max-width:400px) {
+  .registerSection{
+    width: 90%;
+
+   }
+}
+/* ---FIN ESTILO PAGINA DE REGISTRO--- */
