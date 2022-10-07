@@ -1,47 +1,56 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  text-decoration: none;
-  list-style: none;
-  font-family: 'Fjalla One', sans-serif; 
+:root {
+  --black: #000;
+  --yellow: #FCA311;
+  --white: #FFFFFF;
+  --white-grey: #E5E5E5;
+  --grey: #808080;
+  --blue: #14213D;
+  --red: #d60504;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
-body {
-  background: #f6f6f6;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Fjalla One';
+  text-decoration: none;
+  list-style: none;
+}
+
+body:right {
+  background: var(--white-grey);
 }
 
 .header {
-  width: 100%;
   position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 5px 20px;
-  background: #000;
-  color: #fff;
-  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  background: var(--black);
+  color: var(--white);
 }
 
-.header input, .header label {
+.header > input, .header > label {
   display: none;
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .lauta-titulo-color {
-  color: #FCA311;
-}
-
-.navbar {
-  font-size: 1rem;
+  color: var(--yellow);
 }
 
 .navbar ul {
@@ -50,303 +59,332 @@ body {
 }
 
 .nav-link {
-  color: #fff;
-}
-
-.nav-link::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 0;
-  height: 5px;
-  background: #FCA311;
-  transition: ease-out 0.4s;
-}
-
-.nav-link:hover::before {
-  width: 100%;
+  color: var(--white);
+  font-size: 1.1rem;
 }
 
 .active {
-  text-decoration: underline #FCA311 5px;
+  color: var(--yellow);
+}
+
+.nav-link > hr {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 0;
+  transition: linear .2s;
+}
+
+.nav-link:hover hr {
+  border: 1px solid var(--yellow);
+  width: 100%;
 }
 
 .imagen-background {
-  background: url(/img/hombre-con-guitarra.jpg)no-repeat center;
+  background: url(img/hombre-con-guitarra.jpg)no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 80vh;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bienvenidos {
-  width: 100%;
   position: relative;
-  top: -90px;
+  top: 250px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  color: var(--white);
 }
 
 .bienvenidos-grupo {
-  line-height: 1.8;
-  width: 50%;
-  padding: 40px;
-  font-size: 1.5rem;
+  padding: 3rem;
+  width: 100%;
 }
 
 .grupo-color-1 {
-  background: #000;
-  color: #fff;
+  background-color: var(--black);
+  flex: 1 1 330px;
 }
 
-.grupo-color-1 p::before {
-  position: relative;
-  right: 5px;
-  content: "";
-  padding: 0px 5px;
-  background: #FCA311;
+.grupo-color-1 > p {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  border-left: 5px solid var(--yellow);
+  padding-left: 10px;
 }
 
-.grupo-color-1 h1 {
-  font-size: 4.5rem;
+.grupo-color-1 > h1 {
+  padding-top: 20px;
+  font-size: 4rem;
 }
 
 .grupo-color-2 {
-  background: #FCA311;
+  background-color: var(--yellow);
+  color: var(--black);
+  flex: 1 1 330px;
 }
 
-.grupo-color-2 p {
-  padding-bottom: 40px;
+.grupo-color-2 > p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
 }
-
-.btn-clases, .btn-contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  color: #fff;
-  font-size: 1.5rem;
-  width: 200px;
-  height: 80px;
-} 
 
 .bienvenidos-grupo-btn {
   display: flex;
-  justify-content: center;
   gap: 30px;
+  justify-content: center;
 }
 
-.container {
-  width: min(90%, 1300px);
-  margin-inline: auto;
-  border: 3px solid hotpink;
+.btn-link {
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  width: 40%;
 }
 
-.programa-niveles {
-  width: 50%;
-  padding: 1rem;
- }
+.btn-link:hover {
+  background: var(--blue);
+}
+
+.main {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  top: 150px;
+}
 
 .programa-niveles > p {
-  padding: 0px 0px 30px 0px;
-  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding-left: 10px;
+  border-left: 5px solid var(--yellow);
 }
 
-.programa-niveles > p::before {
-  position: relative;
-  right: 5px;
-  content: "";
-  padding: 0px 5px;
-  background: #FCA311; 
-}
-
-.programa-niveles h2 {
+.programa-niveles > h2 {
+  padding-top: 30px;
   font-size: 3rem;
-  font-weight: bolder;
 }
 
 .horarios {
+  padding-top: 2rem;
   display: flex;
-  padding-top: 60px;
-  font-size: 1.2rem;
-  color: #999999;
-  gap: 50px;
-}
-
-.img-div {
-  width: 20%;
-}
-
-.img {
-  width: 100%;
-}
-
-.text-div {
-  width: 60%; 
+  gap: 30px;
+  color: var(--grey);
 }
 
 .presentacion {
+  padding-top: 3rem;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 80px 0px 0px 0px;
+  gap: 30px;
 }
 
-.presentacion p {
-  font-size: 1.2rem;
-}
-
-.presentacion h3 {
-  font-size: 1.5rem;
-}
-
-.parrafo {
-  line-height: 2;
-}
-
-.titulo-biografia {
-  padding: 25px 0px;
-}
-
-.bio-boton a {
-  padding: 15px;
-  background: red;
-  color: #fff;
-}
-
-/* ---PAGINA DE REGISTRO--- */
-.registerContainer {
-  width: 100%;
-  height: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  background-image: url(img/pexels-sebastian-ervi-1763075.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.registerSection{
-  text-align: center;
-  width: 40%;
-  height: 900px;
-  background-color: #ffbb00;
-  border-radius: 10px;
-   color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-.registerSection h2{
-  font-size: 40px;
-}
-.form{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
-  padding: 20px;
-}
-.form input{
-  padding: 5px;
-  text-align: center;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-}
-.form input:focus{
-  border: 1px solid #000;
-}
-.form select{
-  padding: 5px;
-  text-align: center;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-}
-.registerSection button{
-  background : rgb(0, 0, 0); 
-  color : rgb(255, 255, 255); 
-  font-size : 24px; 
-  width : 200px; 
-  height : 80px; 
-  outline: none;
-  border: none;
-position: relative;
-}
-
-.registerSection button:hover{
-  background-color: red;
-  transition: 0.3s;
-}
-.registerSection button:active{
-  top: 5px;
-}
-.registerSection a{
-  color: #000;
-}
-.registerSection a:hover{
-  transition: 0.3s;
-  color: red;
-}
-@media screen and (max-width:800px) {
-  .registerSection{
-    width: 70%;
-    height: 950px;
-   }
-}
-@media screen and (max-width:400px) {
-  .registerSection{
-    width: 90%;
-
-   }
-}
-/* ---FIN ESTILO PAGINA DE REGISTRO--- */
-
-.seccion-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background: url(/img/grupo-de-guitarristas.jpg)no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
-.seccion-contacto::before {
-  position: absolute;
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.titulo-contacto {
-  line-height: 1.8;
-  padding: 40px;
-  z-index: 3;
-}
-
-.subtitulo {
-  z-index: 3;
-}
-
-.seccion-formulario {
-  display: flex;
-}
-
-.seccion-formulario-text, .formulario {
+.presentacion-column {
   width: 50%;
 }
 
-.seccion-formulario-text {
+.presentacion-img {
+  width: 100%;
+}
+
+.presentacion-parrafo {
+  line-height: 1.9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo-biografia {
+  font-size: 1.5rem;
+  padding: 3rem 0;
+}
+
+.bio-boton {
+  padding: 1rem 2rem;
+  background: var(--red);
+  color: var(--white);
+}
+
+.bio-boton:hover {
+  background: var(--black);
+  transition: all linear 0.2s;
+}
+
+.icono-top { 
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icono-btn {
+  position: sticky;
+  top: 20px;
+}
+
+.footer {
+  background: url(/img/grupo-de-guitarristas.jpg)no-repeat center;
+  background-size: cover;
+  position: relative;
+  top: 200px;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  padding: 3.5rem;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.footer-contacto {
+  color: var(--white);
+  z-index: 2;
+}
+
+.footer-contacto > h5 {
+  border-left: 5px solid var(--yellow);
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  padding-left: 10px;
+}
+
+.footer-contacto > h2 {
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+
+.footer-contacto > h4 {
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+.footer-contacto > p {
+  width: 50%;
+  padding-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
   line-height: 1.8;
-  z-index: 3;
+}
+
+.footer-iconos {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 2.5rem;
+}
+
+.footer-iconos > a {
+  color: var(--white);
+}
+
+.formulario {
+  width: 50%;
+  z-index: 2;
+}
+
+.formulario > input {
+  width: 100%;
+  background: none;
+  padding: 2rem 0;
+  border: none;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.formulario > input::placeholder {
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.formulario > input:focus {
+  outline: none;
+}
+
+.formulario > textarea {
+  padding-top: 20px;
+  width: 100%;
+  color: var(--white);
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  resize: none;
+}
+
+.formulario > textarea::placeholder {
+  color: var(--white);
+}
+
+.formulario > textarea:focus {
+  outline: none;
+
+}
+
+.formulario-btn {
+  cursor: pointer;
+  background: var(--yellow);
+  border: none;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.copy {
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+}
+
+.copy-parrafo {
+  color: var(--yellow);
+}
+
+@media(max-width:1280px) {
+  .bienvenidos {
+    width: 90%;
+  }
+}
+
+@media(max-width:768px) {
+  .header > label {
+    display: block;
+    font-size: 2rem;
+  }
+  
+  .btn-menu:checked ~ .navbar {
+    left: 50%;
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    top: -129px;
+    left: 200%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    background: var(--yellow);
+    padding: 4rem 0px;
+    transition: all linear 0.3s;
+  }
+
+  .navbar > ul {
+    flex-direction: column;
+  }
+
+  .nav-link > hr {
+    display: none;
+  }
+
+  .active {
+    color: var(--black);
+  }
+
+
 }
 
